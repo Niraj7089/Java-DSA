@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Your array list is:");
+		ArrayList<Integer> list= new ArrayList<Integer>();
+		
+		//to add elements in list
+		list.add(0);
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		
+		System.out.println(list);
+		
+		//to get an elements
+		int element=list.get(0);
+		System.out.println("Your searched element is:"+ element);
+		
+		//to add element in between
+		list.add(0,5);
+		System.out.println("New element is added to list");
+		System.out.println(list);
+		
+		//set or replace any element 
+		list.set(1, 6);
+		System.out.println("New element is modified");
+		System.out.println(list);
+		
+		//removing any element 
+		list.remove(1);
+		list.add(1,4);
+		System.out.println("Removing element from list");
+		System.out.println(list);
+		
+		//Sorting of Arraylist
+		System.out.println("Sorted list is:");
+		Collections.sort(list);
+		System.out.println(list);
+		
+		
+
+
+
+		
+		
+		
+		
+	}
+}
