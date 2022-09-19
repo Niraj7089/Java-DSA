@@ -1,14 +1,14 @@
-import java.util.Linkedlist;
+import java.util.*;
 
 public class Main
 {
-    public class Node{
-        int data;
+    public static class Node{
+        String data;
         Node next;
     }
-    public class Linkedlist{
+    public static class Linkedlist{
     Node head;
-    public void Insert(int data){
+    public void Insert(String data){
         Node node= new Node();
         node.data= data;
         node.next=null;
@@ -21,7 +21,7 @@ public class Main
         else
         {
             Node n=head;
-            while(n.next=!null){
+            while(n.next!=null){
                 n=n.next;
             }
             n.next=node;
@@ -32,18 +32,20 @@ public class Main
     public void show(){
             Node node=head;
             while(node.next!=null){
-                System.out.println(node.data);
+                System.out.print(node.data +"->");
                 node=node.next;
             }
-            System.out.println(node.data);
+            System.out.print(node.data);
         }
-}
-}
+ }
+
 	public static void main(String[] args) {
 	    Linkedlist list= new Linkedlist();
-	    list.Insert(18);
-	    list.Insert(25);
-	    list.Insert(12);
+	    list.Insert("This");
+	    list.Insert("is");
+	    list.Insert("a");
+	    list.Insert("list");
+	    
 	    list.show();
 	}
 }
