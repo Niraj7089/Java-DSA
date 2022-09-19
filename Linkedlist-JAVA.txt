@@ -1,0 +1,49 @@
+import java.util.Linkedlist;
+
+public class Main
+{
+    public class Node{
+        int data;
+        Node next;
+    }
+    public class Linkedlist{
+    Node head;
+    public void Insert(int data){
+        Node node= new Node();
+        node.data= data;
+        node.next=null;
+        
+        if(head==null)
+        {
+            
+            head=node;
+        }
+        else
+        {
+            Node n=head;
+            while(n.next=!null){
+                n=n.next;
+            }
+            n.next=node;
+        }
+    
+        
+    }
+    public void show(){
+            Node node=head;
+            while(node.next!=null){
+                System.out.println(node.data);
+                node=node.next;
+            }
+            System.out.println(node.data);
+        }
+}
+}
+	public static void main(String[] args) {
+	    Linkedlist list= new Linkedlist();
+	    list.Insert(18);
+	    list.Insert(25);
+	    list.Insert(12);
+	    list.show();
+	}
+}
